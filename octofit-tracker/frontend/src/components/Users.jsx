@@ -1,6 +1,7 @@
 import React from 'react';
 import { useApiCollection } from '../api.js';
 
+// Codespaces endpoint: https://${import.meta.env.VITE_CODESPACE_NAME}-8000.app.github.dev/api/users/
 function Users() {
   const { items, pagination, loading, error } = useApiCollection('users');
 

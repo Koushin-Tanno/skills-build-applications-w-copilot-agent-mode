@@ -1,6 +1,7 @@
 import React from 'react';
 import { useApiCollection } from '../api.js';
 
+// Codespaces endpoint: https://${import.meta.env.VITE_CODESPACE_NAME}-8000.app.github.dev/api/leaderboard/
 function getName(person) {
   return person?.profile?.displayName || person?.username || person?.email || 'Unknown athlete';
 }
